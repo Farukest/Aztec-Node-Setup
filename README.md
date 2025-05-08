@@ -41,7 +41,11 @@ Response must be `/root`
 
 ---
 
-## 1- ENV Setup (Under Root Folder Only)
+## IT WILL AUTO DOWNLOAD FILES UNDER ROOT FOLDER AND MUST RUN UNDER ROOT
+## DO NOT TRY TO MOVE FILES ANYWHERE ELSE AZTEC NEEDS IT 
+
+
+## 1- ENV Setup
 
 Log into your VPS as the `root` user and run the following command:
 
@@ -67,7 +71,7 @@ PUBKEY=Your wallet public key 0xa5..
 
 ---
 
-## 2- Node Run Script (Under Root Folder Only)
+## 2- Node Run Script
 
 ```bash
 [ -f "/root/script.sh" ] && rm /root/script.sh && apt update -y && apt install curl wget screen jq -y && curl -sSL -o /root/script.sh https://raw.githubusercontent.com/Farukest/Aztec-Node-Setup/master/aztec_node_run.sh && chmod +x /root/script.sh && /root/script.sh
