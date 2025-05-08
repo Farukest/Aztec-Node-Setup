@@ -1,5 +1,5 @@
 
-# Aztec Sequencer Node Setup Guide (Root User Only)
+# Aztec Sequencer Node Setup Guide
 
 This guide will walk you through setting up an **Aztec Sequencer Node** on the testnet network and obtaining the "Apprentice" role on Discord. The process is fully automated using a script and **must be executed as the root user**.
 
