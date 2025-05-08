@@ -31,8 +31,9 @@ This guide will walk you through setting up an **Aztec Sequencer Node** on the t
 
 ---
 
-## IMPORTANT NOTE BEFORE START - 
+## IMPORTANT NOTE BEFORE START
 ## $HOME must point root ( like below example )
+
 ```bash
 root@user:~# echo $HOME
 ```
