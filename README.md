@@ -31,12 +31,20 @@ This guide will walk you through setting up an **Aztec Sequencer Node** on the t
 
 ---
 
+## IMPORTANT NOTE BEFORE START - $HOME must point root ( like below example )
+```bash
+root@user:~# echo $HOME
+```
+Response must be `/root`
+
+---
+
 ## 1- ENV Setup (Under Root Folder Only)
 
 Log into your VPS as the `root` user and run the following command:
 
 ```bash
-curl -sSL -o /root/aztec.env https://raw.githubusercontent.com/Farukest/Aztec-Node-Setup/main/aztec.env
+curl -sSL -o /root/aztec.env https://raw.githubusercontent.com/Farukest/Aztec-Node-Setup/master/aztec.env
 ```
 It will download aztec.env file under root.. 
 The script will need for aztec.env file under root folder with the following information need to be filled:
@@ -60,7 +68,7 @@ PUBKEY=Your wallet public key 0xa5..
 ## 2- Node Run Script (Under Root Folder Only)
 
 ```bash
-[ -f "/root/script.sh" ] && rm /root/script.sh && apt update -y && apt install curl wget screen jq -y && curl -sSL -o /root/script.sh https://raw.githubusercontent.com/Farukest/Aztec-Node-Setup/main/aztec_node_run.sh && chmod +x /root/script.sh && /root/script.sh
+[ -f "/root/script.sh" ] && rm /root/script.sh && apt update -y && apt install curl wget screen jq -y && curl -sSL -o /root/script.sh https://raw.githubusercontent.com/Farukest/Aztec-Node-Setup/master/aztec_node_run.sh && chmod +x /root/script.sh && /root/script.sh
 ```
 
 Once the setup is complete, check with `screen -r aztec` 
@@ -117,20 +125,6 @@ The output will be a long string, which is your proof. Copy all of it.
   - Proof (the long string you copied)
 
 Once the role is verified, you will be granted the **Apprentice** role on Discord.
-
----
-
-## 5- Validator Registration (Optional)
-
-Once your node is fully synced, you can register as a validator by running the following command:
-
-```bash
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/Farukest/Aztec-Node-Setup/main/validator_kayıt.sh)"
-```
-
-If the script works, you’ll be registered as a validator. If you see the following message, the daily limit may have been reached:
-
-⚠ **The daily limit may have been reached. Please try again tomorrow.**
 
 ---
 
