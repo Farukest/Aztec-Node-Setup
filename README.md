@@ -63,7 +63,8 @@ PUBKEY=Your wallet public key 0xa5..
 [ -f "/root/script.sh" ] && rm /root/script.sh && apt update -y && apt install curl wget screen jq -y && curl -sSL -o /root/script.sh https://raw.githubusercontent.com/Farukest/Aztec-Node-Setup/main/aztec_node_run.sh && chmod +x /root/script.sh && /root/script.sh
 ```
 
-Once the setup is complete, the node will run in a screen session named **aztec**.
+Once the setup is complete, check with `screen -r aztec` 
+Note : The node will run in a screen session named **aztec**.
 
 
 ## 3- Screen Usage
