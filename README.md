@@ -39,10 +39,15 @@ root@user:~# echo $HOME
 ```
 Response must be `/root`
 
+
 ---
+
 
 ## IT WILL AUTO DOWNLOAD FILES UNDER ROOT FOLDER AND MUST RUN UNDER ROOT
 ## DO NOT TRY TO MOVE FILES ANYWHERE ELSE AZTEC NEEDS IT 
+
+
+---
 
 
 ## 1- ENV Setup
